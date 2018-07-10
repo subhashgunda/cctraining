@@ -12,4 +12,4 @@ jobs:
   - get: gsr-repo
     trigger: true
   - task: list-file
-    file: gsr-repo/list_file.yml
+    file: gsr-repo/list-file.yml
