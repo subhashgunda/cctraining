@@ -10,4 +10,4 @@ inputs:
 
 run:
   path: ls
-  args: [-lart]
+  args: [-laRt]
