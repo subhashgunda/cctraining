@@ -1,0 +1,15 @@
+resources:
+- name: gsr-repo
+  type: git
+  source:
+    uri: https://github.com/subhashgunda/cctraining.git
+    branch: master
+
+
+jobs:
+- name: gsr-list-job
+  plan:
+  - get: gsr-repo
+    trigger: true
+  - task: list-file
+    file: gsr-repo/list_file.yml
